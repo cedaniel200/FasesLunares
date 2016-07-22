@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+
+    // para test y obtener el cliente http para robolectric
+    // ya que de esta manera tiene acceso a la libreria de http
+    //useLibrary('org.apache.http.legacy')
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.cedaniel200.android.faseslunares"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    // TEST
+    testCompile "junit:junit:$rootProject.ext.junitVersion"
+    // cuando necesitamos emular algo propio de android
+    //testCompile "org.robolectric:robolectric:$rootProject.ext.robolectricVersion"
+    // es solo para java y con esta trabajamos los mock
+    testCompile "org.mockito:mockito-all:$rootProject.ext.mockitoVersion"
+
+    compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+
+    compile "org.greenrobot:eventbus:$rootProject.ext.eventbusVersion"
+
+    // PARA DAGGER - INYECCION DE DEPENDENCIA
+    apt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    compile "javax.annotation:jsr250-api:$rootProject.ext.jsr250Version"
+    compile "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+}

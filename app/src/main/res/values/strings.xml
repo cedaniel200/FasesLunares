@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Fases de la Luna</string>
+
+    <string name="luna_nueva">Luna nueva</string>
+    <string name="luna_poco_creciente">Poco creciente</string>
+    <string name="luna_cuarto_creciente">Cuarto creciente</string>
+    <string name="luna_muy_creciente">Creciente</string>
+    <string name="luna_llena">Luna llena</string>
+    <string name="luna_poco_menguante">Poco menguante</string>
+    <string name="luna_cuarto_menguante">Cuarto menguante</string>
+    <string name="luna_muy_menguante">Menguante</string>
+
+    <string name="sagitario">Sagitario</string>
+    <string name="escorpio">Escorpio</string>
+    <string name="libra">Libra</string>
+    <string name="virgo">Virgo</string>
+    <string name="leo">Leo</string>
+    <string name="cancer">Cáncer</string>
+    <string name="geminis">Géminis</string>
+    <string name="tauro">Tauro</string>
+    <string name="aries">Aries</string>
+    <string name="piscis">Piscis</string>
+    <string name="acuario">Acuario</string>
+    <string name="capricornio">Capricornio</string>
+
+    <string name="periodo_acuario">Ene 21 a Feb 18</string>
+    <string name="periodo_piscis">Feb 19 a Mar 20</string>
+    <string name="periodo_aries">Mar 21 a Abr 20</string>
+    <string name="periodo_tauro">Abr 21 a May 21</string>
+    <string name="periodo_geminis">May 22 a Jun 21</string>
+    <string name="periodo_cancer">Jun 22 a Jul 22</string>
+    <string name="periodo_leo">Jul 23 a Ago 23</string>
+    <string name="periodo_virgo">Ago 24 a Sep 23</string>
+    <string name="periodo_libra">Sep 24 a Oct 23</string>
+    <string name="periodo_escorpio">Oct 24 a Nov 22</string>
+    <string name="periodo_sagitario">Nov 23 a Dic 21</string>
+    <string name="periodo_capricornio">Dic 22 a Ene 20</string>
+
+    <string name="format_date">dd/MM/yyyy</string>
+
+    <string name="main_menu_action_share">Compartir</string>
+    <string name="global_title_share_phase">Compartir fase lunar</string>
+    <string name="global_txt_share">La fase de la luna en la fecha %1$s es %2$s</string>
+    <string name="main_menu_action_current_date">Ir al dia actual</string>
+</resources>
